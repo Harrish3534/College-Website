@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+/*banner*/
+.banner
+{
+  background-color: #205bb0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100px;
+}
+.banner img
+{
+  height: 70px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.banner-content
+{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.banner h1
+{
+  font-size: 20px;
+}
+.banner h2
+{
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+  text-align: center;
+}
+/*navbar*/
+.navbar
+{
+  background-color: #b6cd1e;
+  height:50px;
+}
+.navbar-links a
+{
+  text-decoration: none;
+  color:black;
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;  
+}
+.navbar-links
+{
+  display: flex;
+  padding-top: 20px;
+}
+/*about us*/
+.main-div
+{
+  display: flex;
+}
+.about p
+{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 16px;
+   width: 700px;
+   line-height: 24px;
+   padding-left: 20px;
+}
+.about-images
+{
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-img1{
+  border-radius: 20px;
+}
+.about-img2 {
+  border-radius: 20px;
+}
+.depts img
+{ 
+  width: 357px;
+  height: 233px;
+}
+.alldepts
+{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.tamil,.ttm,.public-administration,
+.botony,.physics,.geography,.computer-science,
+.commerce
+{
+  margin-left: 50px;
+}
+.history,.political,.business-administration,
+.chemistry,.psychology,.statistics,.computer-applications,
+.commerce-ib
+{
+  margin-right: 50px;
+}
+.department-name
+{
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.view-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #e6536f; 
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-left: 110px;
+}
+.about-section {
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+.section-title {
+  font-size: 20px;
+  color: #222;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.mission-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+.mission-list li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 16px;
+}
+.student-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+.student-table th,.student-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.student-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.student-title
+{
+  text-align: center;
+  font-size: 20px;
+}
+.footer {
+  background-color: #2a58a6;
+  color: white;
+  padding: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.footer-video,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px;
+}
+.footer-links h3,
+.footer-contact h3 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 8px;
+  color: #fff;
+}
+.footer-contact p {
+  margin: 6px 0;
+}
+
+@media (max-width: 576px) {
+
+  /* ----------- Banner & Navbar ----------- */
+  .banner {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .banner img {
+    height: 50px;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .banner-content {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .navbar-links a {
+    padding: 10px 0;
+    display: block;
+  }
+
+  /* ----------- About Us Section ----------- */
+  .main-div
+  {
+    flex-direction: column;
+  }
+  .about p {
+    width:200px;
+  }
+
+  .about-float-img,
+  .about-float-img2 {
+    float: none;
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .student-title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .student-table {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  /* ----------- Arts Department ----------- */
+  .artsdepartment-1 img,
+  .artsdepartment-2 img,
+  .artsdepartment-3 img {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .textartsdepartment-1,
+  .textartsdepartment-2,
+  .textartsdepartment-3 {
+    margin: 10px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .view-button {
+    margin: 15px auto;
+    display: block;
+  }
+
+  /* ----------- Science Department ----------- */
+  .sciencedepartment-1,
+  .sciencedepartment-2,
+  .sciencedepartment-3,
+  .sciencedepartment-4 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .sciencedepartment-1 img,
+  .sciencedepartment-2 img,
+  .sciencedepartment-3 img,
+  .sciencedepartment-4 img {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .textsciencedepartment-1,
+  .textsciencedepartment-2,
+  .textsciencedepartment-3,
+  .textsciencedepartment-4 {
+    margin: 10px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  /* ----------- Commerce Department ----------- */
+  .commerce-department {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .commerce-department img {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .commerce-department-text {
+    margin: 10px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  /* ----------- Footer Section ----------- */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footer-video,
+  .footer-links,
+  .footer-contact {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
